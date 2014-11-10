@@ -18,7 +18,7 @@ fi
 sudo rpm -pi --root $CHROOT $RELEASE_RPM
 
 # Substitute the release number into the repo files in the chroot.
-sudo sed -i s/\$releasever/20/ $CHROOT/etc/yum.repos.d/*.repo
+sudo sed -i s/\$releasever/$RELEASE_VERSION/ $CHROOT/etc/yum.repos.d/*.repo
 
 # Temporarily link the directory in the chroot containing repository keys to
 # a directory in the host file system.
