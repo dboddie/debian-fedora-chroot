@@ -7,9 +7,10 @@ a base Fedora system.
 Define the details of the installation by setting the environment variables in
 the fedora-chroot-common.sh file:
 
-  CHROOT:      The location of the chroot to be created.
-  MIRROR:      The location of the release RPM.
-  RELEASE_RPM: The file name of the release RPM.
+  CHROOT:           The location of the chroot to be created.
+  MIRROR:           The location of the release RPM.
+  RELEASE_RPM:      The file name of the release RPM.
+  RELEASE_VERSION:  The version of the release to use.
 
 Run the host-scripts/chroot-setup.sh script as root, or using sudo:
 
