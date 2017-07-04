@@ -2,7 +2,9 @@ Fedora chroot creation scripts for Debian
 -----------------------------------------
 
 This is a collection of scripts to automate creation of a chroot that contains
-a base Fedora system.
+a base Fedora system. It only works for Fedora 19 and 20, so it isn't really
+all that useful. If your distribution provides a package for rinse, you should
+use that instead.
 
 Define the details of the installation by setting the environment variables in
 the fedora-chroot-common.sh file:
